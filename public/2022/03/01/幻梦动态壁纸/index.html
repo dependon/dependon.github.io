@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    
+
+    
+    <title>幻梦动态壁纸 | depend的博客</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="keywords" content="" />
+    
+    <meta name="description" content="让你的linux桌面动起来(幻梦动态壁纸)我也是突发奇想，做了这么一个程序，目前在多个linux下可以运行，支持双屏 理论上说支持mpv &gt;&#x3D;29.0qt&gt;&#x3D;5.8.0的系统版本ubuntu18.04可以自行删减代码，或者又需要的联系我ubuntu20.04及以上就可以直接使用。 求点赞收藏及宣传！！！ githubhttps:&#x2F;&#x2F;github.com&#x2F;dependon&#x2F;fantasc">
+<meta property="og:type" content="article">
+<meta property="og:title" content="幻梦动态壁纸">
+<meta property="og:url" content="http://example.com/2022/03/01/%E5%B9%BB%E6%A2%A6%E5%8A%A8%E6%80%81%E5%A3%81%E7%BA%B8/index.html">
+<meta property="og:site_name" content="depend的博客">
+<meta property="og:description" content="让你的linux桌面动起来(幻梦动态壁纸)我也是突发奇想，做了这么一个程序，目前在多个linux下可以运行，支持双屏 理论上说支持mpv &gt;&#x3D;29.0qt&gt;&#x3D;5.8.0的系统版本ubuntu18.04可以自行删减代码，或者又需要的联系我ubuntu20.04及以上就可以直接使用。 求点赞收藏及宣传！！！ githubhttps:&#x2F;&#x2F;github.com&#x2F;dependon&#x2F;fantasc">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/img_convert/0c03f646626b978e2315a746dee74578.gif">
+<meta property="article:published_time" content="2022-03-01T11:57:56.000Z">
+<meta property="article:modified_time" content="2022-03-01T12:06:37.000Z">
+<meta property="article:author" content="depend">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/img_convert/0c03f646626b978e2315a746dee74578.gif">
+    
+
+    
+
+    
+
+    
+<link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+
+    
+<link rel="stylesheet" href="/libs/titillium-web/styles.css">
+
+    
+<link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    
+<script src="/libs/jquery/3.5.0/jquery.min.js"></script>
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+
+    
+    
+    
+    
+
+
+<meta name="generator" content="Hexo 5.4.1"></head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/">主页</a>
+                                </li>
+                            
+                                    
+                                
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/about/about.html">关于</a>
+                                </li>
+                            
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="想要查找什么..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    未分类
+    </h1>
+</div>
+
+                        <div class="main-body-content">
+                            <article id="post-幻梦动态壁纸" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+        幻梦动态壁纸
+        </h1>
+    
+
+            </header>
+        
+        
+            <div class="article-meta">
+                
+  <div class="article-date">
+    <i class="fa fa-calendar"></i>
+    <a href="/2022/03/01/%E5%B9%BB%E6%A2%A6%E5%8A%A8%E6%80%81%E5%A3%81%E7%BA%B8/" class="article-date">
+       <time datetime="2022-03-01T11:57:56.000Z" itemprop="datePublished">2022-03-01</time>
+    </a>
+  </div>
+
+
+<div class="article-date">
+  <i class="fa fa-calendar-plus-o"></i>
+  <a href="/2022/03/01/%E5%B9%BB%E6%A2%A6%E5%8A%A8%E6%80%81%E5%A3%81%E7%BA%B8/" class="article-date">
+     <time datetime="2022-03-01T12:06:37.000Z" itemprop="dateModified">2022-03-01</time>
+  </a>
+</div>
+
+
+                
+
+                
+                
+
+                
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            
+
+            
+
+            
+
+            <h2 id="让你的linux桌面动起来-幻梦动态壁纸"><a href="#让你的linux桌面动起来-幻梦动态壁纸" class="headerlink" title="让你的linux桌面动起来(幻梦动态壁纸)"></a>让你的linux桌面动起来(幻梦动态壁纸)</h2><p>我也是突发奇想，做了这么一个程序，目前在多个linux下可以运行，支持双屏</p>
+<p>理论上说支持mpv &gt;=29.0<br>qt&gt;=5.8.0的系统版本<br>ubuntu18.04可以自行删减代码，或者又需要的联系我<br>ubuntu20.04及以上就可以直接使用。</p>
+<p>求点赞收藏及宣传！！！</p>
+<h2 id="github"><a href="#github" class="headerlink" title="github"></a>github</h2><p><a target="_blank" rel="noopener" href="https://github.com/dependon/fantascene-dynamic-wallpaper">https://github.com/dependon/fantascene-dynamic-wallpaper</a></p>
+<h2 id="ubuntu20-04以上和cutefish下载（1-3-1）"><a href="#ubuntu20-04以上和cutefish下载（1-3-1）" class="headerlink" title="ubuntu20.04以上和cutefish下载（1.3.1）"></a>ubuntu20.04以上和cutefish下载（1.3.1）</h2><p>链接:<br><a target="_blank" rel="noopener" href="https://depend.lanzouj.com/irpF700higuh">https://depend.lanzouj.com/irpF700higuh</a><br>密码:697m</p>
+<h2 id="基于arch的系统获取"><a href="#基于arch的系统获取" class="headerlink" title="基于arch的系统获取"></a>基于arch的系统获取</h2><p>yay -S fantascene-dynamic-wallpaper</p>
+<h2 id="其他linux-appimage获取"><a href="#其他linux-appimage获取" class="headerlink" title="其他linux appimage获取"></a>其他linux appimage获取</h2><p>链接: <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1k7RQy7175Sv7XSM_i6bdiA">https://pan.baidu.com/s/1k7RQy7175Sv7XSM_i6bdiA</a><br>提取码: jk00</p>
+<h3 id="ubuntu20-04效果"><a href="#ubuntu20-04效果" class="headerlink" title="ubuntu20.04效果"></a>ubuntu20.04效果</h3><p><a target="_blank" rel="noopener" href="https://imgtu.com/i/biuJKO"><img src="https://img-blog.csdnimg.cn/img_convert/0c03f646626b978e2315a746dee74578.gif" alt="biuJKO.gif"></a></p>
+<h2 id="cutefishOS"><a href="#cutefishOS" class="headerlink" title="cutefishOS"></a>cutefishOS</h2><p><a target="_blank" rel="noopener" href="https://imgtu.com/i/biKHpt"><img src="https://img-blog.csdnimg.cn/img_convert/7fdc8b7948aa19e740e79cd6f94d8aa2.gif" alt="biKHpt.gif"></a></p>
+<h2 id="manjaro-KDE"><a href="#manjaro-KDE" class="headerlink" title="manjaro KDE"></a>manjaro KDE</h2><p><a target="_blank" rel="noopener" href="https://imgtu.com/i/biMN4A"><img src="https://img-blog.csdnimg.cn/img_convert/665a473c30bd2bd8bc3a6091e19bb9d8.gif" alt="biMN4A.gif"></a></p>
+<h2 id="manjaro-xfce"><a href="#manjaro-xfce" class="headerlink" title="manjaro xfce"></a>manjaro xfce</h2><p><a target="_blank" rel="noopener" href="https://imgtu.com/i/biMa9I"><img src="https://img-blog.csdnimg.cn/img_convert/9de8d0aa1df828cc0aa560c0ed51f57f.gif" alt="biMa9I.gif"></a></p>
+<h2 id="manjaro-gnome"><a href="#manjaro-gnome" class="headerlink" title="manjaro gnome"></a>manjaro gnome</h2><p><a target="_blank" rel="noopener" href="https://imgtu.com/i/biMxKK"><img src="https://img-blog.csdnimg.cn/img_convert/c6068b5a71a438b32e7e2a31deba6faf.gif" alt="biMxKK.gif"></a></p>
+<h2 id="uos系统下双屏效果"><a href="#uos系统下双屏效果" class="headerlink" title="uos系统下双屏效果"></a>uos系统下双屏效果</h2><p><img src="https://img-blog.csdnimg.cn/b5fc8c44c5d3423699786a681fb75c7a.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5aSP5pyJ5YeJ6aOO77yM5Yas5pyJ6Zuq,size_20,color_FFFFFF,t_70,g_se,x_16" alt="请添加图片描述"></p>
+
+        </div>
+        <footer class="article-footer">
+            
+
+
+
+    <a data-url="http://example.com/2022/03/01/%E5%B9%BB%E6%A2%A6%E5%8A%A8%E6%80%81%E5%A3%81%E7%BA%B8/" data-id="cl084kqfj0000gyff4cmq9liz" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+<script>
+    (function ($) {
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+        </footer>
+    </div>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "author": {
+            "@type": "Person",
+            "name": "depend"
+        },
+        "headline": "幻梦动态壁纸",
+        "image": "http://example.comhttps://img-blog.csdnimg.cn/img_convert/0c03f646626b978e2315a746dee74578.gif",
+        "keywords": "",
+        "genre": "",
+        "datePublished": "2022-03-01",
+        "dateCreated": "2022-03-01",
+        "dateModified": "2022-03-01",
+        "url": "http://example.com/2022/03/01/幻梦动态壁纸/",
+        "description": "让你的linux桌面动起来(幻梦动态壁纸)我也是突发奇想，做了这么一个程序，目前在多个linux下可以运行，支持双屏
+理论上说支持mpv &gt;=29.0qt&gt;=5.8.0的系统版本ubuntu18.04可以自行删减代码，或者又需要的联系我ubuntu20.04及以上就可以直接使用。
+求点赞收藏及宣传！！！
+githubhttps://github.com/dependon/fantasc",
+        "wordCount": 78
+    }
+</script>
+
+</article>
+
+    <section id="comments">
+    
+        
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+
+    
+    </section>
+
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>关注我 :</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github" href="https://github.com/dependon" target="_blank" rel="noopener">
+                        <i class="icon fa fa-github"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="bilibili" href="https://space.bilibili.com/144159485" target="_blank" rel="noopener">
+                        <i class="icon fa fa-bilibili"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="csdn" href="https://blog.csdn.net/qq_43081702" target="_blank" rel="noopener">
+                        <i class="icon fa fa-csdn"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+    
+        <a href="/2022/01/20/%E7%94%A8QT%E3%80%81QImage%E6%9D%A5%E5%88%B6%E4%BD%9C%E7%AE%80%E5%8D%95%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">上一篇</strong>
+        <p class="article-nav-title">用QT、QImage来制作简单图像处理工具</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
+    
+    <div class="widgets-container">
+        
+            
+                
+
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">最新文章</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2022/03/01/%E5%B9%BB%E6%A2%A6%E5%8A%A8%E6%80%81%E5%A3%81%E7%BA%B8/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://img-blog.csdnimg.cn/img_convert/0c03f646626b978e2315a746dee74578.gif)" alt="幻梦动态壁纸" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2022/03/01/%E5%B9%BB%E6%A2%A6%E5%8A%A8%E6%80%81%E5%A3%81%E7%BA%B8/" class="title">幻梦动态壁纸</a></p>
+                            <p class="item-date"><time datetime="2022-03-01T11:57:56.000Z" itemprop="datePublished">2022-03-01</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2022/01/20/%E7%94%A8QT%E3%80%81QImage%E6%9D%A5%E5%88%B6%E4%BD%9C%E7%AE%80%E5%8D%95%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://img-blog.csdnimg.cn/20210518142043861.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzMDgxNzAy,size_16,color_FFFFFF,t_70)" alt="用QT、QImage来制作简单图像处理工具" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2022/01/20/%E7%94%A8QT%E3%80%81QImage%E6%9D%A5%E5%88%B6%E4%BD%9C%E7%AE%80%E5%8D%95%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/" class="title">用QT、QImage来制作简单图像处理工具</a></p>
+                            <p class="item-date"><time datetime="2022-01-20T12:29:11.000Z" itemprop="datePublished">2022-01-20</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2021/01/17/%E8%82%A1%E7%A5%A8%E7%90%83/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://img-blog.csdnimg.cn/293e2ea8770e40eda65d59e6bb3a8c61.png)" alt="股票球" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2021/01/17/%E8%82%A1%E7%A5%A8%E7%90%83/" class="title">股票球</a></p>
+                            <p class="item-date"><time datetime="2021-01-17T12:29:11.000Z" itemprop="datePublished">2021-01-17</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">归档</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/03/">三月 2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/01/">一月 2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/01/">一月 2021</a><span class="archive-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+
+            
+                
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">链接</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a target="_blank" rel="noopener" href="https://gitee.com/liuminghang">gitee</a>
+                    </li>
+                
+                    <li>
+                        <a target="_blank" rel="noopener" href="https://github.com/dependon">github</a>
+                    </li>
+                
+                    <li>
+                        <a target="_blank" rel="noopener" href="https://space.bilibili.com/144159485">bilibili</a>
+                    </li>
+                
+                    <li>
+                        <a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_43081702">csdn</a>
+                    </li>
+                
+                    <li>
+                        <a target="_blank" rel="noopener" href="http://hexo.io">Hexo</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+</aside>
+
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </h1>
+                <p>&copy; 2022 depend</p>
+                
+                <p>Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>. Theme by <a href="https://github.com/ppoffice" target="_blank">PPOffice</a></p>
+                
+            </div>
+            <div class="footer-plugins">
+              
+    
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    </div>
+    
+    
+    <script>
+    var disqus_shortname = 'hexo-theme-hueman';
+    
+    
+    var disqus_url = 'http://example.com/2022/03/01/%E5%B9%BB%E6%A2%A6%E5%8A%A8%E6%80%81%E5%A3%81%E7%BA%B8/';
+    
+    (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+
+
+
+
+
+    
+        
+<script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-share.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-video.min.js"></script>
+
+    
+    
+        
+<script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+
+    
+    
+
+    
+    
+    
+
+
+
+<!-- Custom Scripts -->
+
+<script src="/js/main.js"></script>
+
+
+</body>
+</html>
