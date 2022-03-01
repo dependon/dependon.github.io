@@ -1,48 +1,229 @@
----
-layout: page
-description: "follow your heart"
----
+<!DOCTYPE html>
+<html lang="en">
 
-{% for post in paginator.posts %}
-<div class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-        <h2 class="post-title">
-            {{ post.title }}
-        </h2>
-        {% if post.subtitle %}
-        <h3 class="post-subtitle">
-            {{ post.subtitle }}
-        </h3>
-        {% endif %}
-        <div class="post-content-preview">
-            {{ post.content | strip_html | truncate:200 }}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/index.ico">
+    <link rel="stylesheet" href="index.css">
+    <title>首页</title>
+</head>
+
+<body>
+    <div class="background">
+    </div>
+    <div class="w">
+        <div class="search">
+            <form action="http://baidu.com/s" method="get" target="_blank">
+                <div class="search_choice">
+                    <div class="selected">
+                        <img src="images/baiduicon.png">
+                    </div>
+                    <div class="all_choice">
+                        <ul>
+                            <li>
+                                <a href="https://www.baidu.com/" target="_blank"><img src="images/baiduicon.png"><span>百度</span></a>
+                            </li>
+                            <li>
+                                <a href="https://www.bing.com/?mkt=zh-CN" target="_blank"><img src="images/bingicon.png"><span>必应</span></a>
+                            </li>
+                            <li>
+                                <a href="https://www.google.com.hk/webhp?hl=zh-CN&sourceid=cnhp&gws_rd=ssl" target="_blank"><img src="images/googleicon.png"><span>谷歌</span></a>
+                            </li>
+                            <li>
+                                <a href="https://www.sogou.com/" target="_blank"><img src="images/sougouicon.png"><span>搜狗</span></a>
+                            </li>
+                            <li>
+                                <a href="https://www.so.com/" target="_blank"><img src="images/360icon.png"><span>360</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="search_text">
+                    <input name="wd" type="text">
+                </div>
+                <div class="search_button">
+                    <button></button>
+                </div>
+            </form>
         </div>
-    </a>
-    <p class="post-meta">
-        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
-    </p>
-</div>
-<hr>
-{% endfor %}
+        <div class="links">
+            <ul>
+                <li>
+                    <a href="https://www.zhihu.com/" target="_blank">
+                        <div class="link_icon"><img src="images/i1.png"></div>知乎
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.bilibili.com/" target="_blank">
+                        <div class="link_icon"><img src="images/i2.png"></div>bilibili
+                    </a>
+                </li>
+                <li>
+                    <a href="https://pan.baidu.com/disk/home?#/all?path=%2F&vmode=list" target="_blank">
+                        <div class="link_icon"><img src="images/i3.ico"></div>百度网盘
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/" target="_blank">
+                        <div class="link_icon"><img src="images/i4.ico"></div>youtube
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.pixiv.net/" target="_blank">
+                        <div class="link_icon"><img src="images/i5.ico"></div>pixiv
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.y2mate.com/en19" target="_blank">
+                        <div class="link_icon"><img src="images/i6.png"></div>y2mate
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.36dm.club/" target="_blank">
+                        <div class="link_icon"><img src="images/i7.ico"></div>acg搜
+                    </a>
+                </li>
+                <li>
+                    <a href="https://ecampus.nwpu.edu.cn/portal-web/html/index.html?t=1595671153040" target="_blank">
+                        <div class="link_icon"><img src="images/i8.ico"></div>翱翔门户
+                    </a>
+                </li>
+                <li>
+                    <a href="https://saucenao.com/" target="_blank">
+                        <div class="link_icon"><img src="images/i9.jpg"></div>搜插画
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.icourse163.org/" target="_blank" png>
+                        <div class="link_icon"><img src="images/i10.png"></div>mooc
+                    </a>
+                </li>
 
-<!-- Pager -->
-{% if paginator.total_pages > 1 %}
-<ul class="pager">
-    {% if paginator.previous_page %}
-    <li class="previous">
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-    </li>
-    {% endif %}
-    {% if paginator.next_page %}
-    <li class="next">
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-    </li>
-    {% endif %}
-</ul>
-{% endif %}
+                <li>
+                    <a href="https://www.jianfast.com/" target="_blank" png>
+                        <div class="link_icon"><img src="images/i11.ico"></div>简法主页
+                    </a>
+                </li>
 
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><br/>
-Total <span id="busuanzi_value_site_pv"></span> views.<br/>
-您是lmh的第<span id="busuanzi_value_site_uv"></span>个小伙伴<br/>
-<span id="busuanzi_value_page_pv"></span> Hits<br/>
+                <li>
+                    <a href="https://github.com/" target="_blank" png>
+                        <div class="link_icon"><img src="images/i12.png"></div>github
+                    </a>
+                </li>
 
+                <li>
+                    <a href="https://www.bookmarkearth.com/" target="_blank" png>
+                        <div class="link_icon"><img src="images/i13.ico"></div>书签地球
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.runoob.com/" target="_blank" png>
+                        <div class="link_icon"><img src="images/i14.ico"></div>菜鸟教程
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="cartoon">
+        <img src="images/cartoon1.png" class="part1">
+        <img src="images/tanhao.png" class="part2">
+    </div>
+    <div class="pugongying_l">
+    </div>
+    <div class="pugongying_b">
+    </div>
+    <div class="header">
+        <div class="nav">
+            <ul>
+                <li><span></span>音乐
+                    <div class="tri"></div>
+                    <div class="menu">
+                        <ul>
+                            <li>
+                                <a href="https://music.163.com/" target="_blank"><img src="images/music1.ico">网易云音乐</a>
+                            </li>
+                            <li>
+                                <a href="https://y.qq.com/" target="_blank"><img src="images/music2.png">QQ音乐</a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"></a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"></a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"></a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"></a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"></a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"></a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"></a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li><span></span>邮箱
+                    <div class="tri"></div>
+                    <div class="menu">
+                        <ul>
+                            <li>
+                                <a href="https://mail.qq.com/" target="_blank"><img src="images/email1.png">qq邮箱</a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"></a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"></a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"></a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"></a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"></a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"></a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"></a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"></a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="right">
+            <form>
+                <div class="link_input">
+                    <input id="a" type="text" placeholder="输入网址...">
+                </div>
+                <div class="go">
+                    <button onclick="window.open(a.value)"></button>
+            </form>
+            </div>
+        </div>
+</body>
+
+</html>
